@@ -1,0 +1,9 @@
+--langdef=Crystal
+--langmap=Crystal:.cr
+--regex-Crystal=/^\s*def\s+([a-z_][a-zA-Z0-9_?!]*)/\1/f,functions,functions (def ...)/
+--regex-Crystal=/^\s*(abstract|private|protected)\s+def\s+([a-z_][a-zA-Z0-9_?!]*)/\2/f,functions,functions (def ...)/
+--regex-Crystal=/^\s*fun\s+([a-z_][a-zA-Z0-9_?!]*)/\1/f,functions,functions (fun ...)/
+--regex-Crystal=/^\s*class\s+([A-Z][a-zA-Z0-9_]*)/\1/c,class,class (class ...)/
+--regex-Crystal=/^\s*private\s*class\s+([A-Z][a-zA-Z0-9_]*)/\2/c,class,class (class ...)/
+--regex-Crystal=/^\s*module\s+([A-Z][a-zA-Z0-9_]*)/\1/module,module,module (module ...)/
+--regex-Crystal=/^\s*lib\s+([A-Z][a-zA-Z0-9_]*)/\1/lib,lib,lib (lib ...)/
